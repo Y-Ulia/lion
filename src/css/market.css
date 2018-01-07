@@ -1,0 +1,86 @@
+.market {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background: url('../assets/red_bg_01.jpg') center no-repeat;
+  background-size: cover;
+}
+.market img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.market .logo {
+  width: 60%;
+  padding: 4% 0 2%;
+  margin: 0 auto;
+}
+.market .red_envelopes_rain {
+  overflow:hidden;
+  position: relative;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+}
+.market .red_envelopes_rain .big_lion {
+  width: 45%;
+  margin: 0 auto;
+  // transform: translateY(-5%);
+}
+.red_envelopes_rain .title_name {
+  width: 60%;
+  margin: -4% auto 0;
+  // transform: translateY(-25%);
+}
+.market .cloud_01,
+.market .cloud_02,
+.market .cloud_03 {
+  position: absolute;
+  width: 16%;
+}
+.market .cloud_01 {
+  top: 45%;
+  left: 10%;
+  // transform: translate(10%,-1000%);
+}
+.market .cloud_02 {
+  top: 35%;
+  left: 70%;
+  opacity: .7;
+  // transform: translate(350%,-1200%);
+}
+.market .cloud_03 {
+  top: 66%;
+  left: 70%;
+  opacity: .7;
+  // transform: translate(200%,-1150%);
+}
+.market .mfooter {
+  float: left;
+  width: 90%;
+  padding: 5%;
+  height: 20%;
+}
+.mfooter .rules_name,
+.mfooter .game_name {
+  float: left;
+  width: 90%;
+}
+.mfooter a {
+  float: right;
+  width: 45%;
+  margin-top: -20%;
+}
+.mfooter .activity_rules_btn,
+.mfooter .partake_game_btn {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+

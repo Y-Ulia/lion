@@ -1,0 +1,136 @@
+.market .red_envelopes_rain .big_lion,
+.game .mask .play_btn {
+  animation: sport1 3s linear infinite;
+}
+.isPrize_con .prize {
+  animation: sport7 3s linear infinite;
+}
+.market .cloud_01 {
+  animation: sport2 3s linear infinite;
+}
+.market .cloud_02 {
+  animation: sport2 4s linear infinite;
+}
+.market .cloud_03 {
+  animation: sport2 3.5s linear infinite;
+}
+.mfooter .activity_rules_btn,
+.mfooter .partake_game_btn,
+.isActiveRules .return_btn,
+.isGameRules .return_btn,
+.isSuccess .success_btn,
+.again_btn,
+.prize_btn,
+.activity_rules,
+.partake_game,
+.isActiveRules .return_btn {
+  animation: jump 3s linear infinite;
+}
+.start_game_btn,
+.isTest .test_btn  {
+  animation: jump 4s linear infinite;
+}
+.game_rules_btn  {
+  animation: jump 3.5s linear infinite;
+}
+.isPriza {
+  overflow: hidden;
+}
+.isPriza .prize {
+  animation: jump 3.5s linear infinite;
+}
+.isPriza .decorate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+  animation: sport3 3.5s linear infinite;
+  z-index: 9999;
+}
+.market .mfooter {
+  height: auto;
+}
+.home {
+  padding-bottom: 8rem;
+  animation: sport5 3.5s linear infinite;
+}
+.isTest .btn,
+.isTest .isNum,
+.isTest .isPhone {
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+}
+.market .red_envelopes_rain .rain1,
+.market .red_envelopes_rain .rain2 {
+  position: absolute;
+  top: -85%;
+  left: 0;
+  width: 100%;
+}
+.market .red_envelopes_rain .rain1 {
+  animation: snowflake 4s linear infinite;
+}
+.market .red_envelopes_rain .rain2 {
+  animation: snowflake 3s linear infinite;
+}
+.shandian {
+  top: 2rem;
+  z-index: 9990;
+  opacity: 0.2;
+  animation: sport6 3s linear infinite;
+}
+.isPrize .isPrize_con .img {
+  animation: sport7 3.5s linear infinite;
+}
+@keyframes'snowflake' {
+  0 {transform: translateY(0rem);}
+  80% {opacity: 0.9}
+  100% {transform: translateY(19rem); opacity: 0}
+}
+@keyframes'jump' {
+  0 {transform: translateY(0rem)}
+  5% {transform: translateY(-0.4rem)}
+  10% {transform: translateY(0rem)}
+  15% {transform: translateY(-0.2rem)}
+  20% {transform: translateY(0rem)}
+}
+@keyframes'sport1' {
+  0 {transform: scale(1);}
+  50% {transform: scale(0.92); opacity: 0.8;}
+}
+@keyframes'sport2' {
+  0 {transform: translateX(0px) scale(1);}
+  50% {transform: translateX(10px) scale(1.1); opacity: 0.6;}
+}
+@keyframes'sport3' {
+  0 {transform: rotateZ(0deg) scale(1);}
+  50% {transform: rotateZ(5deg) scale(1.05); opacity: 0.8;}
+}
+@keyframes'sport4' {
+  0 {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes'sport5' {
+  0 {opacity: 1;}
+  50% {opacity: 0.8;}
+}
+@keyframes'sport6' {
+  0 {
+    // transform: scale(1);
+    opacity: 0.2;
+  }
+  90% {
+    // transform: scale(1.1);
+    opacity: 1;
+  }
+}
+@keyframes'sport7' {
+  0 {transform: scale(1);}
+  50% {transform: scale(0.92);}
+}

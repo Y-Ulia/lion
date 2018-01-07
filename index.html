@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>玩转金骨棒</title>
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+    <style>
+      .music {
+        width: 44px;
+        height: 44px;
+        background: url('data:image/png;base64,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') center no-repeat;
+        background-size: 50%;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 9999;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+      }
+      .rotate {
+        -webkit-animation: rotate 1.5s infinite ease-in-out;
+      }
+      @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="music" class="rotate music"></div>
+    <audio id="myMusic" preload autoplay="autoplay" loop>
+      <source src="/audio/music.mp3" />
+    </audio>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

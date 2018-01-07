@@ -1,0 +1,70 @@
+html:
+
+<!-- 音乐 -->
+<a href="javascript:void(0);" id="music" class="rotate"></a>
+<audio id="myMusic" autoplay="autoplay" loop>
+	<source src="audio/music.mp3" />
+</audio>
+
+
+
+
+js:
+//原来是在微信易信执行Ready之前，先注册事件，所以放在所有请求的最前面
+document.addEventListener("WeixinJSBridgeReady", function () {
+    audioAutoPlay('myMusic'); //给个全局函数
+}, false);
+document.addEventListener('YixinJSBridgeReady', function () {
+    audioAutoPlay('myMusic'); //给个全局函数
+}, false);
+
+function audioAutoPlay(id) {//全局控制播放函数
+    var audio = document.getElementById(id),
+    play = function () {
+        audio.play();
+        document.removeEventListener("touchstart", play, false);
+    };
+        audio.play();
+        document.addEventListener("touchstart", play, false);
+    }
+
+    var isAppInside = /micromessenger/i.test(navigator.userAgent.toLowerCase()) || /yixin/i.test(navigator.userAgent.toLowerCase());
+    if (!isAppInside) {//给非微信易信浏览器
+    audioAutoPlay('myMusic');
+}
+
+var audio = document.getElementById('myMusic');
+$('#music').on('touchend',function(){
+	if (audio.paused){
+		audio.play();
+		$('#music').addClass('rotate');
+	}else{
+		audio.pause();
+		$('#music').removeClass('rotate');
+	}
+});
+
+
+css:
+#music {
+	width: 11%;
+	height: 1.8rem;
+	background: url(../images/music.png) no-repeat center top;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 9999;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rotate {
+    -webkit-animation: rotate 1.5s infinite ease-in-out;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

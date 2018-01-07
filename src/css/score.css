@@ -1,0 +1,51 @@
+.score {
+  display:flex;
+  align-items:center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: rgba(242,176,62,1);
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(157,88,31);
+  z-index: 20;
+}
+.score .txt {
+  display:flex;
+  align-items:center;
+  width: 25%;
+  height: 100%;
+  justify-content:center;
+}
+.score .box {
+  display:flex;
+  align-items:center;
+  width: 50%;
+  height: 100%;
+  background: rgba(242,176,62,1) url('../assets/value_box.png') center no-repeat;
+  background-size: 100%;
+}
+.score .box .white {
+  overflow: hidden;
+  display:flex;
+  margin-left: 32%;
+  width: 62.5%;
+  height: 23%;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.box .white img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.score .num {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 25%;
+  height: 100%;
+}
+

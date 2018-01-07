@@ -1,0 +1,46 @@
+.bonesTop {
+  position: absolute;
+  top: 8%;
+  width: 100%;
+  height: 10px;
+  z-index: 10;
+  background: transparent;
+}
+.bonesTop .bone {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 16%;
+  background: rgba(140,27,18,1) url('../assets/small_bone.png') center no-repeat;
+  background-size: 100%;
+  border-radius: 15%;
+}
+
+.t0 {
+  left: 6%;
+}
+.t1 {
+  left: 24%;
+}
+.t2 {
+  left: 42%;
+}
+.t3 {
+  left: 60%;
+}
+.t4 {
+  left: 78%;
+}
+
+.bones {
+  width: 100%;
+  height: 100%;
+}
+.bones .bone {
+  position: absolute;
+  top: 8%;
+  width: 16%;
+  background: transparent url('../assets/small_bone.png') center no-repeat;
+  background-size: 100%;
+  z-index: 11;
+}
